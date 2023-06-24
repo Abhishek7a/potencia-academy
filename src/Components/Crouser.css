@@ -1,0 +1,6 @@
+@media screen and (max-width: 720px) {
+  .crouser_img {
+    height: 300px;
+    /* width: 300px; */
+  }
+}

@@ -1,0 +1,35 @@
+.formSection {
+  background-color: #212844;
+  /* background-color:#95BEFE; */
+  color: #fff;
+}
+.btn {
+  background-color: #212844;
+  border: none;
+  color: #fff;
+}
+.btn:hover {
+  background: #fff;
+  border: 2px solid #212844;
+  color: #212844;
+}
+.form {
+  padding-left: 100px;
+}
+@media screen and (max-width: 720px) {
+  .formSection {
+    background-color: #fff;
+    /* color: #212844; */
+  }
+  .form {
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 4%;
+  }
+  .form-label {
+    color: #212844;
+  }
+  input {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.6);
+  }
+}
