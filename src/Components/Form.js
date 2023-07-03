@@ -25,7 +25,7 @@ export default function Form() {
                 const response = await fetch(API_URL);
                 const result = await response.json();
 
-        // console.log(form)
+        console.log(result)
 
         // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
         //     .then((result) => {
@@ -34,7 +34,7 @@ export default function Form() {
         //     }, (error) => {
         //         console.log(error.text);
         //     });
-        
+
         // const result = await res.json();
         if (res.status === 201){
             toast.success(result.message);
