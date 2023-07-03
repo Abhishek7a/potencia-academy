@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 
 export default function Form() {
-    lo
+    
     // const API_URL = 'http://localhost:3500/register'
     const API_URL = 'https://potencia-academy-backend.vercel.app/check'
     const formm = useRef();
