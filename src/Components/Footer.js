@@ -29,7 +29,7 @@ export default function Footer() {
                         <div className="col-md-5 col-lg-4 col-xl-3  mb-4">
                             <img className=" d-flex flex-start w-75" src="Potencia-Academy-logo2.png" style={{  }} alt="Error Load Image" />
                             <p className='text-start mt-3  text-light'>
-                                POTENCIA ACADEMY offers interactive lectures from qualified IIT faculties for success in engineering and medical entrances and board exams, starting from className IX. Aptitude classNamees for competitive exams also offered. Led by experienced educators who focus on building basic concepts.
+                                POTENCIA ACADEMY offers interactive lectures from qualified IIT faculties for success in engineering and medical entrances and board exams, starting from  IX. Aptitude class Namees for competitive exams also offered. Led by experienced educators who focus on building basic concepts.
                             </p>
                         </div>
 
