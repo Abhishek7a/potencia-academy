@@ -13,13 +13,18 @@ export default function Form() {
     const [form, setform] = useState({ name: undefined, email: undefined, fatherName: undefined, classs: "9", contact: undefined })
     const [submitSuccess, setSubmitSuccess] = useState(0);
     const handleSubmit = async () => {
-        const res = await fetch(API_URL, {
-            // method: 'POST',
-            // headers: {
-            //     'Content-Type': 'application/json'
-            // },
-            // body: JSON.stringify(form)
-        })
+        // const res = await fetch(API_URL, {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(form)
+        // })
+
+
+                const response = await fetch(API_URL);
+                const result = await response.json();
+
         // console.log(form)
 
         // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
@@ -29,19 +34,20 @@ export default function Form() {
         //     }, (error) => {
         //         console.log(error.text);
         //     });
+        
         // const result = await res.json();
-        // if (res.status === 201){
-        //     toast.success(result.message);
-        //     setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
-        // }
-        // if (res.status === 406)
-        //     toast.error(result.error);
-        // if (res.status === 422)
-        //     toast.info(result.error);
-        // if (res.status === 409)
-        //     toast.warn(result.error);
-        // if (res.status === 500)
-        //     toast.warn(result.error);
+        if (res.status === 201){
+            toast.success(result.message);
+            setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
+        }
+        if (res.status === 406)
+            toast.error(result.error);
+        if (res.status === 422)
+            toast.info(result.error);
+        if (res.status === 409)
+            toast.warn(result.error);
+        if (res.status === 500)
+            toast.warn(result.error);
 
     }
     useEffect(() => {
