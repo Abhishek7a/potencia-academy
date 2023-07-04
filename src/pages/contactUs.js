@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function ContactUs() {
     // const API_URL = 'http://localhost:3500/contactUs'
-    const API_URL = 'https://potencia-academy-backend.vercel.app/contatUs';
+    const API_URL = 'https://potencia-academy-backend.vercel.app/contactUs';
 
     const [form, setform] = useState({ name: undefined, email: undefined, subject: undefined, message: undefined });
     // const [submitSuccess, setSubmitSuccess] = useState(0);

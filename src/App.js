@@ -10,6 +10,7 @@ import Others from './pages/results/others';
 import AboutUs from './pages/AboutUs';
 import Career from './pages/Career';
 import ContactUs from './pages/ContactUs';
+// import ContactUs from './pages/contactUs';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
