@@ -3,7 +3,7 @@ import './card.css'
 
 export default function Card() {
   return (
-    <div className=" mt-5 lg-p-5 md-p-5 sm-p-5 mx-lg-1 mx-md-0  mx-sm-0 " style={{ backgroundImage: "url(https://www.catestseries.org/Images/bg-banner.jpg)" }}>
+    <div className=" mt-5 lg-p-5 md-p-5 sm-p-5 p-5 mx-lg-1 mx-md-0  mx-sm-0 " style={{ backgroundImage: "url(https://www.catestseries.org/Images/bg-banner.jpg)" }}>
 
       <div className="row mt-5 mx-auto mx-5 ">
         <h1 className="text-center"> Select Course</h1>
