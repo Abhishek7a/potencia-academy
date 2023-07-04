@@ -7,35 +7,21 @@ import emailjs from '@emailjs/browser';
 export default function Form() {
     
     // const API_URL = 'http://localhost:3500/register'
-    const API_URL = 'https://potencia-academy-backend.vercel.app/check'
-    const formm = useRef();
+    const API_URL = 'https://potencia-academy-backend.vercel.app/register';
+    // const formm = useRef();
 
     const [form, setform] = useState({ name: undefined, email: undefined, fatherName: undefined, classs: "9", contact: undefined })
-    const [submitSuccess, setSubmitSuccess] = useState(0);
+    // const [submitSuccess, setSubmitSuccess] = useState(0);
     const handleSubmit = async () => {
-        // const res = await fetch(API_URL, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(form)
-        // })
+        const res = await fetch(API_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(form)
+        })
 
-
-                const response = await fetch(API_URL);
-                const result = await response.json();
-
-        console.log(result)
-
-        // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         console.log("message send")
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
-
-        // const result = await res.json();
+        const result = await res.json();
         if (res.status === 201){
             toast.success(result.message);
             setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
@@ -50,12 +36,12 @@ export default function Form() {
             toast.warn(result.error);
 
     }
-    useEffect(() => {
-        if (submitSuccess) {
-            setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
-            setSubmitSuccess(0);
-        }
-    }, [submitSuccess])
+    // useEffect(() => {
+    //     if (submitSuccess) {
+    //         // setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
+    //         setSubmitSuccess(0);
+    //     }
+    // }, [submitSuccess])
     const handleOnChange = (e) => {
         setform({ ...form, [e.target.id]: e.target.value });
     }

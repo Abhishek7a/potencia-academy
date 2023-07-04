@@ -5,21 +5,18 @@ export default function Footer() {
     return (
         <footer className=" text-center text-lg-start  text-muted mt-5" style={{ backgroundColor: "#212844" }} >
             <section >
-                <section
-                    className="d-flex justify-content-between p-4 "
-                    style={{backgroundColor:"rgb(36 47 88)"}}
-                >
-                    <div className="me-5">
-                        <span className='text-white fw-bold'>Get connected with us on social networks:</span>
+                <section className="d-flex justify-content-between flex-wrap  py-4 px-2" style={{backgroundColor:"rgb(36 47 88)"}} >
+                    <div className="md:me-5 ">
+                        <span className='text-white fw-bold text-wrap'>Get connected with us on social networks:</span>
                     </div>
-                    <div>
-                        <a href="https://www.facebook.com/potenciacademy" target='_blank'  className="text-white me-4">
+                    <div >
+                        <a href="https://www.facebook.com/potenciacademy" target='_blank'  className="text-white md:me-4 me-2">
                             <FaFacebookF/>
                         </a>
-                        <a href="https://www.instagram.com/academypotencia/" target='_blank' className="text-white me-4">
+                        <a href="https://www.instagram.com/academypotencia/" target='_blank' className="text-white md:me-4 me-2">
                             <BsInstagram/>
                         </a>
-                        <a href="https://www.linkedin.com/company/potencia-academy/about/" target='_blank' className="text-white me-4">
+                        <a href="https://www.linkedin.com/company/potencia-academy/about/" target='_blank' className="text-white md:me-4">
                             <FaLinkedinIn/>
                         </a>
                     </div>
@@ -29,7 +26,7 @@ export default function Footer() {
                         <div className="col-md-5 col-lg-4 col-xl-3  mb-4">
                             <img className=" d-flex flex-start w-75" src="Potencia-Academy-logo2.png" style={{  }} alt="Error Load Image" />
                             <p className='text-start mt-3  text-light'>
-                                POTENCIA ACADEMY offers interactive lectures from qualified IIT faculties for success in engineering and medical entrances and board exams, starting from  IX. Aptitude class Namees for competitive exams also offered. Led by experienced educators who focus on building basic concepts.
+                                POTENCIA ACADEMY offers interactive lectures from qualified IIT faculties for success in engineering and medical entrances and board exams, starting from class IX. Aptitude class  for competitive exams also offered. Led by experienced educators who focus on building basic concepts.
                             </p>
                         </div>
 
