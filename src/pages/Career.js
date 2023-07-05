@@ -3,8 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Career() {
-    // const API_URL = 'http://localhost:3500/career'
-    const API_URL = 'https://potencia-academy-backend.vercel.app/career';
+    const API_URL = 'http://localhost:3500/career'
+    // const API_URL = 'https://potencia-academy-backend.vercel.app/career';
 
     // const formm = useRef();
 
@@ -79,7 +79,7 @@ export default function Career() {
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label">Last Salary</label>
                             <input type="number" className="form-control" onChange={handleOnChange} name="lasSalary" value={form.lastSalary} style={{ color: "#212844" }} id="lastSalary" aria-describedby="emailHelp" placeholder='Enter your last salary' />
                         </div>
-                        <button onClick={handleSubmit} type="submit" className="btn btn-primary" style={{ border: "2px solid white" }}>Submit</button>
+                        <button onClick={handleSubmit} type="submit" className="btn" style={{ border: "2px solid white" }}>Submit</button>
                         <ToastContainer />
                     </div>
                 </form>
