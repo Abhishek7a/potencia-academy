@@ -21,8 +21,8 @@
 .link{
   border-bottom: 3px solid #212844;
   text-decoration: none;
-  width: 100%;
-  display: block;
+  /* width: 100%; */
+  /* display: block; */
 }
 .load {
   background-color: #212844;
