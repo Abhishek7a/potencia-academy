@@ -1,3 +1,9 @@
+@media (min-width: 1024px) {
+  .nav-link:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+}
 .nav-link {
   cursor: pointer;
 }
@@ -14,10 +20,7 @@
   z-index: 1;
   top: 0;
 }
-.nav-link:hover::after {
-  width: 100%;
-  transition: width 0.3s ease;
-}
+
 .link{
   border-bottom: 3px solid #212844;
   text-decoration: none;

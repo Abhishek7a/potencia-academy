@@ -35,7 +35,7 @@ export default function Header() {
 
                             <li className="nav-item dropdown mx-lg-2">
                                 <a className="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: "#212844" }}>
-                                    Results<span className="mx-1" style={{ clipPath: "polygon(49% 74%, 0 39%, 100% 39%)", backgroundColor: "black" }}> ...</span>
+                                    Results<span className="mx-1" style={{ clipPath: "polygon(49% 74%, 0 39%, 100% 39%)", backgroundColor: "#212844" }}> ...</span>
                                 </a>
                                 <ul className="dropdown-menu ">
                                     <Link onClick={goToTop} className={`${location.pathname === "/medical" ? "link" : "nav-link"}`}  style={{ color: "#212844" }} to="/medical"><li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Medical </li></Link>
@@ -50,7 +50,7 @@ export default function Header() {
 
                             <li className="nav-item dropdown mx-lg-2" >
                                 <a className="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: "#212844" }}>
-                                    Students<span className="mx-1" style={{ clipPath: "polygon(49% 74%, 0 39%, 100% 39%)", backgroundColor: "black" }}> ...</span>
+                                    Students<span className="mx-1" style={{ clipPath: "polygon(49% 74%, 0 39%, 100% 39%)", backgroundColor: "#212844" }}> ...</span>
                                 </a>
                                 <ul className="dropdown-menu ">
                                     {/* <li><Link onClick={goToTop} className="nav-link mx-2" style={{ color: "#212844" }} to="/login">Login</span></Link></li> */}
