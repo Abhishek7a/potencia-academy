@@ -14,7 +14,7 @@ export default function Crouser() {
                         {/* <img src="crouser_img_1.webp" className="d-block w-100 crouser_img" alt="..."/> */}
                     </div>
                 </div>
-                    <p className='text-center my-3 fs-6 fs-ls-2 fw-bold  ' style={{ color: "#212844" }}>POTENCIA ACADEMY - UNLEASH YOUR POTENTIAL</p>
+                    <p className='text-center my-3 fw-bold' style={{ color: "#212844" }}>POTENCIA ACADEMY - UNLEASH YOUR POTENTIAL</p>
                 {/* <div id="carouselExampleControls" className="carousel slide mx-5 my-2" data-bs-ride="carousel">
                     <div className="carousel-inner ">
                         <div className="carousel-item active">
