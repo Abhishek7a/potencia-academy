@@ -37,7 +37,7 @@ export default function About() {
                 {/* <div className='mx-lg-5 pb-5'> */}
                 <img src="aboutUs.png" className='d-lg-block w-50 d-none ' alt="" />
                 {/* </div> */}
-                <div className='flex  p-5'>
+                <div className='flex  p-lg-5 p-md-3 p-2'>
 
                     <h1 className='pt-5 text-center text-light fw-bold'>About Us</h1>
                     <p className='mt-5 mx-lg-5 text-start fs-6  px-lg-5 px-md-1 mx-md-0 mx-sm-0 text-wrap text-secondary'>POTENCIA ACADEMY provides interactive lectures from qualified faculties to guide the students for their success in engineering and medical entrances and board examinations. Lays foundation from class IX for better future in any field. Also provides Aptitude classes for different competitive exams. All faculties are from IITs with good experience and the best knowledge in their respective subjects, who will lead you towards sucess by clearing basic concept without cramming them.</p>

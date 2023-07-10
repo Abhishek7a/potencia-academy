@@ -7,9 +7,9 @@ export default function Footer() {
             <section >
                 <section className="d-flex justify-content-between flex-wrap  py-4 px-2" style={{backgroundColor:"rgb(36 47 88)"}} >
                     <div className="md:me-5 ">
-                        <span className='text-white fw-bold text-wrap'>Get connected with us on social networks:</span>
+                        <span className='text-white fw-bold text-wrap '>Get connected with us on social networks:</span>
                     </div>
-                    <div >
+                    <div className='text-center w-sm-100 mx-sm-0 mx-auto'>
                         <a href="https://www.facebook.com/potenciacademy" target='_blank'  className="text-white md:me-4 me-2">
                             <FaFacebookF/>
                         </a>

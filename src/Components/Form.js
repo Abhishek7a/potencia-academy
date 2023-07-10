@@ -56,7 +56,7 @@ export default function Form() {
         >
             <h1 className='p-3 text-center' style={{ color: "#212844" }}>Scholarship Test</h1>
             <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
-                <div className=' form p-5 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
+                <div className=' form p-lg-5  mx-auto mx-lg-5 p-4 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label ">Name</label>
@@ -65,7 +65,7 @@ export default function Form() {
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
                             <input type="email" onChange={handleOnChange} name="user_email" value={form.email} className="form-control" style={{ color: "#212844" }} id="email" aria-describedby="emailHelp" placeholder='Enter your email' />
-                            <div id="emailHelp" className="form-label ">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" className="form-label text-secondary">We'll never share your email with anyone else.</div>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" name="father_name" className="form-label">Father Name</label>
