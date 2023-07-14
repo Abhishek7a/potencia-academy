@@ -9,6 +9,7 @@ import ContactUs from './pages/contactUs';
 import Api from './resultsAPI';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Results from './pages/Results';
+import Syllabus from './pages/Syllabus';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path='/aboutUs' element={<AboutUs />} />
           <Route exact path='/career' element={<Career />} />
           <Route exact path='/contactUs' element={<ContactUs />} />
+          <Route exact path='/syllabus' element={<Syllabus />} />
         </Routes>
         <Footer />
       </Router >

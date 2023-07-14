@@ -1,5 +1,6 @@
 import React from 'react'
 import './card.css'
+import { Link } from 'react-router-dom'
 
 export default function Card() {
   return (
@@ -12,8 +13,8 @@ export default function Card() {
             <div className="card-body text-center">
               <h5 className="card-title" style={{ color: "#212844" }}>Foundation Course</h5>
               <p className="card-text" style={{ color: "#212844" }}>(9<sup>th</sup> / 10<sup>th</sup>)</p>
-              <a href="#" className="btn d-block  mx-md-auto ">View Details</a>
-              <a href="#" className="btn  d-block  mx-md-auto mt-2">Syllabus</a>
+              <Link to="/syllabus" className="btn d-block  mx-md-auto ">View Details</Link>
+              <Link to="/syllabus" className="btn  d-block  mx-md-auto mt-2">Syllabus</Link>
             </div>
           </div>
         </div>
@@ -22,8 +23,8 @@ export default function Card() {
             <div className="card-body text-center">
               <h5 className="card-title"  style={{ color: "#212844" }}>Enthusiast</h5>
               <p className="card-text" style={{ color: "#212844" }}>(JEE / NEET)</p>
-              <a href="#" className="btn  d-block  mx-md-auto ">View Details</a>
-              <a href="#" className="btn mt-2 d-block mx-md-auto">Syllabus</a>
+              <Link to="/syllabus" className="btn  d-block  mx-md-auto ">View Details</Link>
+              <Link to="/syllabus" className="btn mt-2 d-block mx-md-auto">Syllabus</Link>
             </div>
           </div>
         </div>
@@ -31,8 +32,8 @@ export default function Card() {
           <div className="card">
             <div className="card-body text-center">
               <h5 className="card-title" style={{ color: "#212844" }}>Crash Course</h5>
-              <a href="#" className=" mt-5 btn d-block  d-block mx-md-auto">View Details</a>
-              <a href="#" className="btn d-block mx-md-auto mt-2">Syllabus</a>
+              <Link to="/syllabus" className=" mt-5 btn d-block  d-block mx-md-auto">View Details</Link>
+              <Link to="/syllabus" className="btn d-block mx-md-auto mt-2">Syllabus</Link>
             </div>
           </div>
         </div>
@@ -40,8 +41,8 @@ export default function Card() {
           <div className="card">
             <div className="card-body text-center">
               <h5 className="card-title" style={{ color: "#212844" }}>Dropper Batch</h5>
-              <a href="#" className=" mt-5 btn d-block mx-md-auto">View Details</a>
-              <a href="#" className="btn d-block mx-md-auto mt-2">Syllabus</a>
+              <Link to="/syllabus" className=" mt-5 btn d-block mx-md-auto">View Details</Link>
+              <Link to="/syllabus" className="btn d-block mx-md-auto mt-2">Syllabus</Link>
             </div>
           </div>
         </div>
@@ -49,8 +50,8 @@ export default function Card() {
           <div className="card">
             <div className="card-body text-center">
               <h5 className="card-title" style={{ color: "#212844" }}>Online Testing</h5>
-              <a href="#" className=" mt-5 btn d-block mx-md-auto">View Details</a>
-              <a href="#" className="btn d-block mx-md-auto mt-2">Syllabus</a>
+              <Link to="/syllabus" className=" mt-5 btn d-block mx-md-auto">View Details</Link>
+              <Link to="/syllabus" className="btn d-block mx-md-auto mt-2">Syllabus</Link>
             </div>
           </div>
         </div>

@@ -40,7 +40,7 @@
         {
             "id": 7,
             "link": "https://www.potencia.in/wp-content/uploads/2023/01/Gurveen.jpg",
-            "name": "Sahil Verma",
+            "name": "Gurveen",
             "currently": "MBBS"
         },
         {
@@ -52,7 +52,7 @@
         {
             "id": 9,
             "link": "https://www.potencia.in/wp-content/uploads/2023/01/Sashwat1-150x150.jpg",
-            "name": "Ramandeep Kaur",
+            "name": "Sashwat ",
             "currently": "GS Medical College",
             "position": "MBBS"
         },
