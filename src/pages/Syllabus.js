@@ -13,11 +13,11 @@ export default function Syllabus() {
           <div className="py-3">
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> What is a SAAS platform?</span>
+                <span> Foundation Course</span>
               </summary>
-              <p className="text-neutral-600  mt-3 px-4 py-3 rounded group-open:animate-fadeIn" style={{border:"2px solid #212844"}}>
-                SAAS platform is a cloud-based software service that allows users to
-                access and use a variety of tools and functionality.
+              <p className="text-neutral-600  mt-3 px-4 py-3 rounded group-open:animate-fadeIn" style={{ border: "2px solid #212844" }}>
+
+                In the 11th and 12th grades, students pursuing the non-medical stream are provided with foundation courses that form the bedrock of their academic journey. Non-medical refers to a stream of education that focuses on subjects like Physics, Chemistry, Mathematics, and Computer Science. These foundation courses are essential in laying a strong groundwork for students to excel in these subjects and pave the way for their future careers in fields like engineering, technology, research, and more.
               </p>
             </details>
           </div>
@@ -43,17 +43,34 @@ export default function Syllabus() {
             </span> */}
               </summary>
               <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                We offers a variety of billing options, including monthly and annual
-                subscription plans, as well as pay-as-you-go pricing for certain
-                services. Payment is typically made through a credit card or other
-                secure online payment method.
+                <ul>
+                  <li>
+                    Exam Pattern: JEE Main primarily assesses the candidates' knowledge in three subjects: Physics, Chemistry, and Mathematics. The exam is typically conducted in two shifts, and each subject is given equal weightage.
+
+                  </li>
+                  <li>
+                    Mode of Examination: JEE Main is conducted in both online (Computer-Based Test) and offline (Pen and Paper-Based Test) modes. However, starting from 2021, the exam is conducted in a fully computer-based format.
+
+                  </li>
+                  <li>
+                    Question Types: The exam consists of multiple-choice questions (MCQs) as well as numerical value-based questions, where candidates need to enter the numerical value as the answer.
+
+                  </li>
+                  <li>
+                    Marking Scheme: JEE Main has a specific marking scheme, where each correct answer is awarded four marks, while an incorrect answer results in a deduction of one mark. No marks are awarded or deducted for unanswered questions.
+
+                  </li>
+                  <li>
+                    Exam Frequency: Before 2021, JEE Main was conducted twice a year (January and April). However, starting from 2021, JEE Main is held four times a year (February, March, April, and May), giving students more opportunities to improve their scores.
+                  </li>
+                </ul>
               </p>
             </details>
           </div>
           <div className="py-3">
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> Can I get a refund for my subscription?</span>
+                <span> Crash Course</span>
                 {/* <span className="transition group-open:rotate-180">
               <svg
                 fill="none"
@@ -71,18 +88,15 @@ export default function Syllabus() {
             </span> */}
               </summary>
               <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                We offers a 30-day money-back guarantee for most of its subscription
-                plans. If you are not satisfied with your subscription within the
-                first 30 days, you can request a full refund. Refunds for
-                subscriptions that have been active for longer than 30 days may be
-                considered on a case-by-case basis.
+
+                A crash course, in an educational context, refers to an intensive and accelerated learning program designed to cover a substantial amount of material within a short period. These courses are typically offered for various subjects, standardized tests, or professional certifications and are often taken by students or individuals seeking quick and focused learning to achieve specific goals in a limited time.
               </p>
             </details>
           </div>
           <div className="py-3">
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> How do I cancel my subscription?</span>
+                <span> Dropper Batch</span>
                 {/* <span className="transition group-open:rotate-180">
               <svg
                 fill="none"
@@ -100,146 +114,23 @@ export default function Syllabus() {
             </span> */}
               </summary>
               <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                To cancel your We subscription, you can log in to your account and
-                navigate to the subscription management page. From there, you should
-                be able to cancel your subscription and stop future billing.
+                The term "Dropper Batch" specifically refers to a batch or group of students who have chosen to take a drop or gap year to focus solely on their exam preparation. These students typically aim to improve their scores and secure admission to top-tier colleges or universities, especially in highly competitive exams like the Joint Entrance Examination (JEE) for engineering or the National Eligibility cum Entrance Test (NEET) for medical courses
               </p>
             </details>
           </div>
           <div className="py-3">
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> Can I try this platform for free?</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
+                <span> Online Testing</span>
               </summary>
               <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                We offers a free trial of its platform for a limited time. During
-                the trial period, you will have access to a limited set of features
-                and functionality, but you will not be charged.
-              </p>
-            </details>
-          </div>
-          <div className="py-3">
-            <details className="group">
-              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> How do I access documentation?</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
-              </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                Documentation is available on the company's website and can be
-                accessed by logging in to your account. The documentation provides
-                detailed information on how to use the , as well as code examples
-                and other resources.
-              </p>
-            </details>
-          </div>
-          <div className="py-3">
-            <details className="group">
-              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> How do I contact support?</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
-              </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                If you need help with the platform or have any other questions, you
-                can contact the company's support team by submitting a support
-                request through the website or by emailing support@We.com.
-              </p>
-            </details>
-          </div>
-          <div className="py-3">
-            <details className="group">
-              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> Do you offer any discounts or promotions?</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
-              </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                We may offer discounts or promotions from time to time. To stay
-                up-to-date on the latest deals and special offers, you can sign up
-                for the company's newsletter or follow it on social media.
-              </p>
-            </details>
-          </div>
-          <div className="py-3">
-            <details className="group">
-              <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> How do we compare to other similar services?</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
-              </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-                This platform is a highly reliable and feature-rich service that
-                offers a wide range of tools and functionality. It is competitively
-                priced and offers a variety of billing options to suit different
-                needs and budgets.
+                The PREX (Potencia's Scholarship Test) is a specially designed initiative conducted every year by Potencia Academy where students from across 9 districts of Malwa region compete against the brightest minds to showcase their talent in a competitive environment.
+
+                PREX is one of the biggest scholarship exams conducted in the Malwa region where young talent is recognized and awarded scholarships of up to 100% of their tuition fees. Students currently in Class
+
+                10th are eligible to appear for PREX 2020.
+
+                It serves as a launchpad for students to unlock their hidden potential and also prepare for their goals like IT/JEE/NEET/AIIMS by testing their various capabilities.
               </p>
             </details>
           </div>

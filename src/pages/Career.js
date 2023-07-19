@@ -18,7 +18,7 @@ export default function Career() {
             },
             body: JSON.stringify(form)
         })
-        console.log(form)
+        // console.log(form)
         // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
         //     .then((result) => {
         //         console.log(result.text);
