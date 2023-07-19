@@ -3,8 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Career() {
-    const API_URL = 'http://localhost:3500/career'
-    // const API_URL = 'https://potencia-academy-backend.vercel.app/career';
+    // const API_URL = 'http://localhost:3500/career'
+    const API_URL = 'https://potencia-academy-backend.vercel.app/career';
 
     // const formm = useRef();
 

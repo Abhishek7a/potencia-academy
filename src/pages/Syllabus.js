@@ -15,7 +15,7 @@ export default function Syllabus() {
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> What is a SAAS platform?</span>
               </summary>
-              <p className="text-neutral-600  mt-3 px-5 py-3 rounded group-open:animate-fadeIn" style={{border:"2px solid #212844"}}>
+              <p className="text-neutral-600  mt-3 px-4 py-3 rounded group-open:animate-fadeIn" style={{border:"2px solid #212844"}}>
                 SAAS platform is a cloud-based software service that allows users to
                 access and use a variety of tools and functionality.
               </p>
@@ -25,7 +25,7 @@ export default function Syllabus() {
           <div className="py-3">
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                <span> How does billing work?</span>
+                <span>JEE Mains</span>
                 {/* <span className="transition group-open:rotate-180">
               <svg
                 fill="none"

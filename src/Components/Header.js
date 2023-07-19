@@ -60,7 +60,7 @@ export default function Header() {
                                 </ul>
                             </li>
 
-                            <Link onClick={goToTop} className={`${location.pathname === "/prex" ? "link m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }}  to="/prex" ><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Prex  </li></Link>
+                            <Link to='https://frontend-testing-portal-potencia.vercel.app/' onClick={goToTop} className={`${location.pathname === "/prex" ? "link m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }}  ><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Prex  </li></Link>
 
 
                             <Link onClick={goToTop} className={`${location.pathname === "/contactUs" ? "link  m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }}  to="/contactUs"><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Contact Us</li></Link>
