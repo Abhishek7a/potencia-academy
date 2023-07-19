@@ -4,7 +4,7 @@ export default function Syllabus() {
   return (
     <>
 
-      <div className="max-w-screen-xl mx-auto md:px-5 px-3 bg-white min-h-sceen md:w-75 m-auto py-1 rounded">
+      <div className="max-w-screen-xl mx-auto px-md-5 px-3 bg-white min-h-sceen md:w-75 m-auto py-1 rounded">
         <div className="flex flex-col items-center">
           <h2 className="font-bold text-5xl mt-5 tracking-tight text-center">Syllabus</h2>
         </div>
