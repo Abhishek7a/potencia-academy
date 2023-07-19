@@ -4,10 +4,9 @@ export default function Syllabus() {
   return (
     <>
 
-      <div className="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen w-75 m-auto py-1 rounded">
+      <div className="max-w-screen-xl mx-auto md:px-5 bg-white min-h-sceen w-75 m-auto py-1 rounded">
         <div className="flex flex-col items-center">
           <h2 className="font-bold text-5xl mt-5 tracking-tight text-center">Syllabus</h2>
-          {/* <p className="text-neutral-500 text-xl mt-3">Frequenty asked questions</p> */}
         </div>
         <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
           <div className="py-3">
@@ -26,23 +25,8 @@ export default function Syllabus() {
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span>JEE Mains</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
               </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 px-4 py-3 group-open:animate-fadeIn" style={{ border: "2px solid #212844" }}>
                 <ul>
                   <li>
                     Exam Pattern: JEE Main primarily assesses the candidates' knowledge in three subjects: Physics, Chemistry, and Mathematics. The exam is typically conducted in two shifts, and each subject is given equal weightage.
@@ -71,24 +55,8 @@ export default function Syllabus() {
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Crash Course</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
               </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
-
+              <p className="text-neutral-600 mt-3 px-4 py-3 group-open:animate-fadeIn" style={{ border: "2px solid #212844" }}>
                 A crash course, in an educational context, refers to an intensive and accelerated learning program designed to cover a substantial amount of material within a short period. These courses are typically offered for various subjects, standardized tests, or professional certifications and are often taken by students or individuals seeking quick and focused learning to achieve specific goals in a limited time.
               </p>
             </details>
@@ -97,23 +65,8 @@ export default function Syllabus() {
             <details className="group">
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Dropper Batch</span>
-                {/* <span className="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height={24}
-                shapeRendering="geometricPrecision"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </span> */}
               </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 px-4 py-3 group-open:animate-fadeIn" style={{ border: "2px solid #212844" }}>
                 The term "Dropper Batch" specifically refers to a batch or group of students who have chosen to take a drop or gap year to focus solely on their exam preparation. These students typically aim to improve their scores and secure admission to top-tier colleges or universities, especially in highly competitive exams like the Joint Entrance Examination (JEE) for engineering or the National Eligibility cum Entrance Test (NEET) for medical courses
               </p>
             </details>
@@ -123,7 +76,7 @@ export default function Syllabus() {
               <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                 <span> Online Testing</span>
               </summary>
-              <p className="text-neutral-600 mt-3 mx-5 group-open:animate-fadeIn">
+              <p className="text-neutral-600 mt-3 px-4 py-3 group-open:animate-fadeIn" style={{ border: "2px solid #212844" }}>
                 The PREX (Potencia's Scholarship Test) is a specially designed initiative conducted every year by Potencia Academy where students from across 9 districts of Malwa region compete against the brightest minds to showcase their talent in a competitive environment.
 
                 PREX is one of the biggest scholarship exams conducted in the Malwa region where young talent is recognized and awarded scholarships of up to 100% of their tuition fees. Students currently in Class
