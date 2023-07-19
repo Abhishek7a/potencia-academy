@@ -4,7 +4,7 @@ export default function Syllabus() {
   return (
     <>
 
-      <div className="max-w-screen-xl mx-auto md:px-5 bg-white min-h-sceen w-75 m-auto py-1 rounded">
+      <div className="max-w-screen-xl mx-auto md:px-5 px-3 bg-white min-h-sceen md:w-75 m-auto py-1 rounded">
         <div className="flex flex-col items-center">
           <h2 className="font-bold text-5xl mt-5 tracking-tight text-center">Syllabus</h2>
         </div>
@@ -15,7 +15,6 @@ export default function Syllabus() {
                 <span> Foundation Course</span>
               </summary>
               <p className="text-neutral-600  mt-3 px-4 py-3 rounded group-open:animate-fadeIn" style={{ border: "2px solid #212844" }}>
-
                 In the 11th and 12th grades, students pursuing the non-medical stream are provided with foundation courses that form the bedrock of their academic journey. Non-medical refers to a stream of education that focuses on subjects like Physics, Chemistry, Mathematics, and Computer Science. These foundation courses are essential in laying a strong groundwork for students to excel in these subjects and pave the way for their future careers in fields like engineering, technology, research, and more.
               </p>
             </details>
