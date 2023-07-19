@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react'
-import './Form.css'
+import './ScholorShip.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import scholorship from '../assets/formImage.png';
 import emailjs from '@emailjs/browser';
 
 export default function Form() {
-    
+
     // const API_URL = 'http://localhost:3500/register'
     const API_URL = 'https://potencia-academy-backend.vercel.app/register';
     // const formm = useRef();
@@ -22,7 +23,7 @@ export default function Form() {
         })
 
         const result = await res.json();
-        if (res.status === 201){
+        if (res.status === 201) {
             toast.success(result.message);
             setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
         }
@@ -92,10 +93,13 @@ export default function Form() {
                             <input type="number" onChange={handleOnChange} className="form-control" placeholder='Enter your phone no.' value={form.contact} style={{ color: "#212844" }} id="contact" aria-describedby="emailHelp" />
                         </div>
                         <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid white" }}>Submit</button>
-                        <ToastContainer />
+                        <ToastContainer
+                            style={{ width: "50%" }}
+                            className="mx-auto"
+                        />
                     </div>
                 </div>
-                <img src="formImage.png" className='d-lg-block w-50 d-none ' alt="" />
+                <img src={scholorship} className='d-lg-block w-50 d-none ' alt="" />
             </div>
         </form >
     )

@@ -1,6 +1,7 @@
-import React from 'react'
-import { useState } from 'react'
-import './about.css'
+import React from 'react';
+import { useState } from 'react';
+import './about.css';
+import about from '../assets/about.png';
 
 export default function About() {
     const API_URL = 'http://localhost:3500/register'
@@ -32,15 +33,11 @@ export default function About() {
 
     return (
         <section className='mx-lg-3 rounded m-lg-5 m-md-5 about'>
-            {/* <div   className='col-7 text-center bg-white rounded'> */}
             <div className='d-lg-flex  text-center  d-sm-block '>
-                {/* <div className='mx-lg-5 pb-5'> */}
-                <img src="aboutUs.png" className='d-lg-block w-50 h-25 d-none ' alt="" />
-                {/* </div> */}
+                <img src={about} className='d-lg-block w-50 h-25 d-none rounded-start' alt="" />
                 <div className='flex  p-lg-5 p-md-3 p-2'>
-
                     <h1 className='pt-5 text-center text-light fw-bold'>About Us</h1>
-                    <p className='mt-5 mx-lg-5 text-start fs-6  px-lg-5 px-md-1 mx-md-0 mx-sm-0 text-wrap ' style={{color:"#ced9eb"}}>POTENCIA ACADEMY provides interactive lectures from qualified faculties to guide the students for their success in engineering and medical entrances and board examinations. Lays foundation from class IX for better future in any field. Also provides Aptitude classes for different competitive exams. All faculties are from IITs with good experience and the best knowledge in their respective subjects, who will lead you towards sucess by clearing basic concept without cramming them. Aptitude classes for different competitive exams. All faculties are from IITs with good experience and the best knowledge in their respective subjects, who will lead you towards sucess by clearing basic concept without cramming them</p>
+                    <p className='mt-5 mx-lg-5 text-start fs-6  px-lg-5 px-md-1 mx-md-0 mx-sm-0 text-wrap ' style={{color:"#ced9eb"}}>POTENCIA ACADEMY provides interactive lectures from qualified faculties to guide the students for their success in engineering and medical entrances and board examinations. Lays foundation from class IX for better future in any field. Also provides Aptitude classes for different competitive exams. All faculties are from IITs with good experience and the best knowledge in their respective subjects, who will lead you towards sucess by clearing basic concept without cramming them. Aptitude classes for different competitive exams. </p>
                 </div>
             </div>
 

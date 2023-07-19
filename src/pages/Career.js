@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import image from '../assets/formImage.png';
 
 export default function Career() {
     // const API_URL = 'http://localhost:3500/career'
@@ -80,10 +81,13 @@ export default function Career() {
                             <input type="number" className="form-control" onChange={handleOnChange} name="lasSalary" value={form.lastSalary} style={{ color: "#212844" }} id="lastSalary" aria-describedby="emailHelp" placeholder='Enter your last salary' />
                         </div>
                         <button onClick={handleSubmit} type="submit" className="btn" style={{ border: "2px solid white" }}>Submit</button>
-                        <ToastContainer />
+                        <ToastContainer
+                            style={{ width: "50%" }}
+                            className="mx-auto"
+                        />
                     </div>
                 </form>
-                <img src="formImage.png" className='d-lg-block w-50 d-none ' alt="" />
+                <img src={image} className='d-lg-block w-50 d-none ' alt="" />
             </div>
         </>
     )

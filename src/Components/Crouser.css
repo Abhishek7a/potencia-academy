@@ -1,6 +1,21 @@
+@media screen and (min-width: 1000px) {
+  .heading{
+    font-size: x-large;
+  }
+}
 @media screen and (max-width: 720px) {
   .crouser_img {
     height: 300px;
-    /* width: 300px; */
+  }
+  .heading{
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 480px) {
+  .crouser_img {
+    height: 150px;
+  }
+  .heading{
+    font-size: small;
   }
 }

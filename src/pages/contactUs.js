@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import image from '../assets/formImage2.png';
+
 export default function ContactUs() {
     // const API_URL = 'http://localhost:3500/contactUs'
     const API_URL = 'https://potencia-academy-backend.vercel.app/contactUs';
@@ -67,9 +69,12 @@ export default function ContactUs() {
                         </div>
                         <button type="submit" onClick={handleSubmit} className="btn " style={{ border: "2px solid white" }}>Submit</button>
                     </div>
-                    <ToastContainer />
+                    <ToastContainer
+                            style={{ width: "50%" }}
+                            className="mx-auto"
+                        />
                 </form>
-                <img src="formImage2.png" className='d-lg-block w-50 d-none' alt="" />
+                <img src={image} className='d-lg-block w-50 d-none' alt="" />
             </div>
             <div className='d-lg-flex justify-content-lg-center'>
                 <div className='mt-5 mx-lg-5 '>
