@@ -4,13 +4,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import image from '../assets/formImage.png';
 
 export default function Career() {
-    // const API_URL = 'http://localhost:3500/career'
-    const API_URL = 'https://potencia-academy-backend.vercel.app/career';
+    const API_URL = 'http://localhost:3500/career'
+    // const API_URL = 'https://potencia-academy-backend.vercel.app/career';
 
     // const formm = useRef();
 
     const [form, setform] = useState({ name: undefined, specialization: undefined, experience: undefined, resume: undefined, lastSalary: undefined })
     // const [submitSuccess, setSubmitSuccess] = useState(0);
+    const handleOnFileUpload = async (e) => {
+        const file = e.target.files[0];
+        console.log(file);
+        const base64 = await convertToBase64(file);
+        console.log(base64);
+        setform({ ...form, resume: base64 });
+    }
     const handleSubmit = async () => {
         const res = await fetch(API_URL, {
             method: 'POST',
@@ -53,13 +60,25 @@ export default function Career() {
         e.preventDefault();
     }
 
+    const convertToBase64 = (file) => {
+        return new Promise((resolve, reject) => {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(file);
+            fileReader.onload = () => {
+                resolve(fileReader.result)
+            };
+            fileReader.onerror = (error) => {
+                reject(error)
+            }
+        })
+    }
     return (
         <>
             <h2 className='text-center '>Find Your Dream Job Now</h2>
             <p className='m-md-5 m-3'>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
             <h3 className='p-3 text-center' style={{ color: "#212844" }}>Details</h3>
             <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
-                <form  onSubmit={sendForm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
+                <form onSubmit={sendForm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
@@ -74,7 +93,7 @@ export default function Career() {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label d-block">Upload CV</label>
-                            <input type="file" id="resume" className='w-50' name="resume" onChange={handleOnChange} value={form.resume} placeholder='Upload your resume' />
+                            <input type="file" id="resume" accept=".jpeg, .png, .jpg" className='w-50' name="resume" onChange={handleOnChange} value={form.resume} placeholder='Upload your resume' />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label">Last Salary</label>

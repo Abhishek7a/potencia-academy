@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Marquee />
         <Routes>
-          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route exact path='/medical' element={<Results heading="Medical" path={Api.medical} />} />
           <Route exact path='/non-medical' element={<Results heading="Non Medical" path={Api.non_medical} />} />
           <Route exact path='/broad' element={<Results heading="Board" path={Api.broad} />} />

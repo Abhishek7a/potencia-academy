@@ -30,7 +30,7 @@ export default function Header() {
                     </button>
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mx-2 fw-bold ">
-                            <Link onClick={goToTop} className={`${location.pathname === "/home" ? "link m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844", }} aria-current="page" to="/home">  <li className="nav-item " data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home </li></Link>
+                            <Link onClick={goToTop} className={`${location.pathname === "/" ? "link m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844", }} aria-current="page" to="/">  <li className="nav-item " data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home </li></Link>
 
                             <Link onClick={goToTop} className={`${location.pathname === "/career" ? "link  m-lg-2 my-2" : "nav-link"}`} aria-current="page" style={{ color: "#212844" }} to="/career" > <li className="nav-item " data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" > Career</li></Link>
 
