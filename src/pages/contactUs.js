@@ -27,7 +27,6 @@ export default function ContactUs() {
         if (res.status === 201) {
             toast.success('Thankyou for your feedback');
             // Send Email
-            emailjs.init(userId);
             const templateParams = {
                 to_email: 'abhishekarora7327@gmail.com',
                 message: JSON.stringify({
@@ -93,7 +92,7 @@ export default function ContactUs() {
             <div className='d-lg-flex justify-content-lg-center'>
                 <div className='mt-5 mx-lg-5 '>
                     <h1 className='text-center'>BATHINDA</h1>
-                    <div className='rounded-md p-lg-5 p-3' style={{ border: "2px solid #212844" }}>
+                    <div className='rounded-md p-lg-5 pb-lg-4 p-3' style={{ border: "2px solid #212844" }}>
                         <h3>ADDRESS :</h3>
                         <p>Near DR. Maheshwari Chowk, Opp. Petrol Pump, 100 Feet Road, Bathinda</p>
                         <h3>PHONE :</h3>
@@ -105,7 +104,7 @@ export default function ContactUs() {
                 </div>
                 <div className='mt-5 mx-lg-5 '>
                     <h1 className='text-center'>MOGA</h1>
-                    <div className='rounded-md p-lg-5 p-3  py-5' style={{ border: "2px solid #212844", backgroundColor: "#212844", color: "#fff" }}>
+                    <div className='rounded-md p-lg-5 p-3   py-5 ' style={{ border: "2px solid #212844", backgroundColor: "#212844", color: "#fff" }}>
                         <h3>ADDRESS :</h3>
                         <p>Dasmesh Nagar , St.No. 10 , Near Dasmesh Park , Armritsar Road</p>
                         <h3>PHONE :</h3>

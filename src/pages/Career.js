@@ -32,8 +32,6 @@ export default function Career() {
             const res = await axios.post(API_URL, formData);
             toast.success(res.data.message);
             // Send Email
-            emailjs.init(userId);
-
             const templateParams = {
                 to_email: 'abhishekarora7327@gmail.com',
                 message: JSON.stringify({
@@ -41,7 +39,7 @@ export default function Career() {
                     name: form.name,
                     specialization: form.specialization,
                     experience: form.experience,
-                    resume: selectedFile,
+                    resume: res.data.path,
                     lastSalary: form.lastSalary
                 }, null, 2),
             };

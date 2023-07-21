@@ -29,8 +29,6 @@ export default function Form() {
         if (res.status === 201) {
             toast.success(result.message);
             // Send Email
-            emailjs.init(userId);
-
             const templateParams = {
                 to_email: 'abhishekarora7327@gmail.com',
                 message: JSON.stringify({
@@ -100,7 +98,7 @@ export default function Form() {
                         <ToastContainer className="w-75 z-1 pt-4 mt-5" />
                     </div>
                 </div>
-                <img src={scholorship} className='d-lg-block w-50 d-none ' alt="" />
+                <img src={scholorship} className='d-lg-block w-50 d-none rounded-end' alt="" />
             </div>
         </form >
     )
