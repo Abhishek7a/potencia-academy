@@ -5,10 +5,10 @@ export default function Facilities() {
         <section className="bg-light">
             <h1 className='mt-2 text-center pt-5'>Facilities</h1>
             <div className='d-flex flex-wrap justify-content-around '>
-                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-2 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
+                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
                     <div className="row g-0">
                         <div className=" col-md-4 my-3 ml-2 text-center">
-                            <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/Transportb-q10wcmyxfqrby4iksw0sls3b4v51qo76hh263at5xs.jpg" className="img-fluid rounded-start " alt="transport" />
+                            <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/Transportb-q10wcmyxfqrby4iksw0sls3b4v51qo76hh263at5xs.jpg" className="img-fluid rounded-start rounded-sm-none" alt="transport" />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -19,7 +19,7 @@ export default function Facilities() {
                     </div>
                 </div>
 
-                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-2 col-sm-10 px-2" style={{ backgroundColor: "#212844", color: "#fff" }}>
+                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ backgroundColor: "#212844", color: "#fff" }}>
                     <div className="row g-0 ">
                         <div className=" col-md-4 my-3 ml-2 text-center">
                             <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/c-q10vdwtky37z0qyhkvmzhjk92eavd8c6dledtaartc.jpg" className="img-fluid rounded-start " alt="hostel" />
@@ -32,7 +32,7 @@ export default function Facilities() {
                         </div>
                     </div>
                 </div>
-                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-2 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
+                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
                     <div className="row g-0 ">
                         <div className=" col-md-4 my-3 ml-2 text-center">
                             <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/Transportb-q10wcmyxfqrby4iksw0sls3b4v51qo76hh263at5xs.jpg" className="img-fluid rounded-start " alt="hostel" />
@@ -46,7 +46,7 @@ export default function Facilities() {
                     </div>
                 </div>
 
-                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-2 col-sm-10 px-2" style={{ backgroundColor: "#212844", color: "#fff" }}>
+                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ backgroundColor: "#212844", color: "#fff" }}>
                     <div className="row g-0">
                         <div className=" col-md-4 my-3 ml-2 text-center">
                             <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/c-q10vdwtky37z0qyhkvmzhjk92eavd8c6dledtaartc.jpg" className="img-fluid rounded-start" alt="transport" />
@@ -59,7 +59,7 @@ export default function Facilities() {
                         </div>
                     </div>
                 </div>
-                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-2 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
+                <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
                     <div className="row g-0 ">
                         <div className=" col-md-4 my-3 ml-2 text-center ">
                             <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/Transportb-q10wcmyxfqrby4iksw0sls3b4v51qo76hh263at5xs.jpg" className="img-fluid rounded-start" alt="hostel" />
@@ -72,7 +72,7 @@ export default function Facilities() {
                         </div>
                     </div>
                 </div>
-                <div className="card mb-3 col-md-5 col-lg-3 mt-3 mx-3 col-sm-10 px-2" style={{ backgroundColor: "#212844", color: "#fff" }}>
+                <div className="card mb-3 col-md-5 col-lg-3 mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ backgroundColor: "#212844", color: "#fff" }}>
                     <div className="row g-0 ">
                         <div className=" col-md-4 my-3 ml-2 text-center">
                             <img src="https://www.potencia.in/wp-content/uploads/elementor/thumbs/c-q10vdwtky37z0qyhkvmzhjk92eavd8c6dledtaartc.jpg" className="img-fluid rounded-start" alt="hostel" />

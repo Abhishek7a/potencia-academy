@@ -63,7 +63,7 @@ export default function ContactUs() {
                         <button type="submit" onClick={handleSubmit} className="btn " style={{ border: "2px solid  #212844" }}>Submit</button>
                     </div>
                     <ToastContainer
-                            style={{ width: "50%" }}
+                            style={{ width: "65%" }}
                             className="mx-auto"
                         />
                 </form>

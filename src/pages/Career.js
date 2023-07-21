@@ -50,7 +50,7 @@ export default function Career() {
     return (
         <>
             <h2 className='text-center '>Find Your Dream Job Now</h2>
-            <p className='m-md-5 m-3 text-muted'>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
+            <p className='m-md-5 m-3 mx-4 text-muted'>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
             <h3 className='p-3 text-center' style={{ color: "#212844" }}>Details</h3>
             <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <form onSubmit={sendForm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
@@ -79,8 +79,8 @@ export default function Career() {
                         </div>
                         <button onClick={handleSubmit} type="submit" className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
                         <ToastContainer
-                            style={{ width: "50%" }}
-                            className="mx-auto"
+                            style={{ width: "65%" }}
+                            className="mx-auto "
                         />
                     </div>
                 </form>

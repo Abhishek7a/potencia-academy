@@ -21,7 +21,7 @@
 }
 @media screen and (max-width: 480px) {
   .text{
-    font-size: 14px;
+    font-size: 12px;
     /* text-size-adjust: 1px; */
   }
 }

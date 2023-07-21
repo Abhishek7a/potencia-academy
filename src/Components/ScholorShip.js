@@ -86,7 +86,7 @@ export default function Form() {
                         </div>
                         <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
                         <ToastContainer
-                            style={{ width: "50%" }}
+                            style={{ width: "65%" }}
                             className="mx-auto"
                         />
                     </div>
