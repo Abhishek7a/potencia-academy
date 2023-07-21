@@ -48,7 +48,7 @@ export default function ContactUs() {
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
                             <input type="email" className="form-control" onChange={handleOnChange} name="email" value={form.email} style={{ color: "#212844" }} id="email" aria-describedby="emailHelp" placeholder='Enter your email' />
-                            <div id="emailHelp" className="form-label text-secondary">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" className="form-label text-secondary mt-1" style={{fontSize:"12px"}}>We'll never share your email with anyone else.</div>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Subject</label>
@@ -60,7 +60,7 @@ export default function ContactUs() {
                         </div>
                         <button type="submit" onClick={handleSubmit} className="btn border-2 border-white" style={{ border: "2px solid #212844" }} >Submit</button>
                     </div>
-                    <ToastContainer className="w-75 "/>
+                    <ToastContainer className="w-75 z-1"/>
                 </form>
                 <img src={image} className='d-lg-block w-50 d-none' alt="" />
             </div>

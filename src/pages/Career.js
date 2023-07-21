@@ -69,7 +69,7 @@ export default function Career() {
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label d-block">Upload CV</label>
                             <input type="file" id="resume"
-                                className='w-50' name="resume"
+                                className='w-52 shadow-none' name="resume"
                                 onChange={handleOnFileUpload}
                             />
                         </div>
@@ -78,7 +78,7 @@ export default function Career() {
                             <input type="number" className="form-control" onChange={handleOnChange} name="lasSalary" value={form.lastSalary} style={{ color: "#212844" }} id="lastSalary" aria-describedby="emailHelp" placeholder='Enter your last salary' />
                         </div>
                         <button onClick={handleSubmit} type="submit" className="btn border-2 border-white " style={{ border: "2px solid #212844" }}>Submit</button>
-                        <ToastContainer className="w-75 "/>
+                        <ToastContainer className="w-75 z-1"/>
                     </div>
                 </form>
                 <img src={image} className='d-lg-block w-50 d-none ' alt="" />

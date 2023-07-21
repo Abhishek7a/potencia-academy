@@ -62,7 +62,7 @@ export default function Form() {
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
                             <input type="email" onChange={handleOnChange} name="user_email" value={form.email} className="form-control" style={{ color: "#212844" }} id="email" aria-describedby="emailHelp" placeholder='Enter your email' />
-                            <div id="emailHelp" className="form-label text-secondary">We'll never share your email with anyone else.</div>
+                            <div id="emailHelp" className="form-label text-secondary mt-1" style={{fontSize:"12px"}}>We'll never share your email with anyone else.</div>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" name="father_name" className="form-label">Father Name</label>
@@ -81,7 +81,7 @@ export default function Form() {
                             <input type="number" onChange={handleOnChange} className="form-control" placeholder='Enter your phone no.' value={form.contact} style={{ color: "#212844" }} id="contact" aria-describedby="emailHelp" />
                         </div>
                         <button onClick={handleSubmit} type='submit' className="btn border-2 border-white" style={{ border: "2px solid #212844" }}>Submit</button>
-                        <ToastContainer className="w-75 "/>
+                        <ToastContainer className="w-75 z-1"/>
                     </div>
                 </div>
                 <img src={scholorship} className='d-lg-block w-50 d-none ' alt="" />
