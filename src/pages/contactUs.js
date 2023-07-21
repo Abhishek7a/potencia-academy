@@ -8,7 +8,6 @@ export default function ContactUs() {
     const API_URL = 'https://potencia-academy-backend.vercel.app/contactUs';
 
     const [form, setform] = useState({ name: undefined, email: undefined, subject: undefined, message: undefined });
-    // const [submitSuccess, setSubmitSuccess] = useState(0);
     const handleSubmit = async () => {
         const res = await fetch(API_URL, {
             method: 'POST',
@@ -30,13 +29,7 @@ export default function ContactUs() {
         if (res.status === 500)
             toast.warn(result.error);
     }
-    // console.log(form);
-    // useEffect(() => {
-    //     if (submitSuccess) {
-    //         setform({ name: "", email: "", subject: "", message: "" })
-    //         setSubmitSuccess(0);
-    //     }
-    // }, [submitSuccess])
+    
     const handleOnChange = (e) => {
         setform({ ...form, [e.target.id]: e.target.value });
     }
@@ -46,7 +39,7 @@ export default function ContactUs() {
 
     return (
         <section className='mb-5 '>
-            <h1 className='p-3 text-center ' style={{ color: "#212844" }}>Contact Us</h1>
+            <h1 className='p-md-3 text-center ' style={{ color: "#212844" }}>Contact Us</h1>
             <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <form onSubmit={sendForm} className=' form p-lg-5 p-4 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
@@ -67,7 +60,7 @@ export default function ContactUs() {
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label">Message</label>
                             <textarea type="textarea" rows="5" className="form-control " onChange={handleOnChange} name="text" value={form.message} style={{ color: "#212844" }} id="message" aria-describedby="emailHelp" placeholder='Enter your message' />
                         </div>
-                        <button type="submit" onClick={handleSubmit} className="btn " style={{ border: "2px solid white" }}>Submit</button>
+                        <button type="submit" onClick={handleSubmit} className="btn " style={{ border: "2px solid  #212844" }}>Submit</button>
                     </div>
                     <ToastContainer
                             style={{ width: "50%" }}
@@ -79,7 +72,7 @@ export default function ContactUs() {
             <div className='d-lg-flex justify-content-lg-center'>
                 <div className='mt-5 mx-lg-5 '>
                     <h1 className='text-center'>BATHINDA</h1>
-                    <div className='rounded p-lg-5 p-3' style={{ border: "2px solid #212844" }}>
+                    <div className='rounded-md p-lg-5 p-3' style={{ border: "2px solid #212844" }}>
                         <h3>ADDRESS :</h3>
                         <p>Near DR. Maheshwari Chowk, Opp. Petrol Pump, 100 Feet Road, Bathinda</p>
                         <h3>PHONE :</h3>
@@ -89,9 +82,9 @@ export default function ContactUs() {
                         <a href="" className='' style={{ textDecoration: "none" }}>info @potencia.in</a>
                     </div>
                 </div>
-                <div className='mt-5 mx-lg-5'>
+                <div className='mt-5 mx-lg-5 '>
                     <h1 className='text-center'>MOGA</h1>
-                    <div className='rounded p-lg-5 p-3 py-4' style={{ border: "2px solid #212844", backgroundColor: "#212844", color: "#fff" }}>
+                    <div className='rounded-md p-lg-5 p-3  py-5' style={{ border: "2px solid #212844", backgroundColor: "#212844", color: "#fff" }}>
                         <h3>ADDRESS :</h3>
                         <p>Dasmesh Nagar , St.No. 10 , Near Dasmesh Park , Armritsar Road</p>
                         <h3>PHONE :</h3>

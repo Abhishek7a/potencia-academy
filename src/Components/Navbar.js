@@ -22,7 +22,7 @@ export default function Header() {
     return (
         <>
             <div className={load === "0" ? "unload" : "load"}></div>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary px-lg-5 px-md-5 nav_bar" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary px-lg-5 px-md-5 nav_bar shadow py-md-2 py-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
                 <div className="container-fluid d-flex justify-content-between ">
                     <img className="img " src={logo} alt="Error Load Image" />
                     <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,9 +62,7 @@ export default function Header() {
 
 
                             <Link onClick={goToTop} className={`${location.pathname === "/contactUs" ? "link  m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }}  to="/contactUs"><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Contact Us</li></Link>
-
                         </ul>
-
                     </div>
                 </div>
             </nav >

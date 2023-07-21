@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Footer from './Components/Footer';
 import AboutUs from './pages/AboutUs';
 import Career from './pages/Career';
-import ContactUs from './pages/contactUs';
+import ContactUs from './pages/ContactUs';
 import Api from './resultsAPI';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Results from './pages/Results';
@@ -27,6 +27,7 @@ function App() {
           <Route exact path='/career' element={<Career />} />
           <Route exact path='/contactUs' element={<ContactUs />} />
           <Route exact path='/syllabus' element={<Syllabus />} />
+          <Route  path='*' element={<h1 className='text-center'>Page Not Found</h1>} />
         </Routes>
         <Footer />
       </Router >

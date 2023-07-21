@@ -2,80 +2,55 @@ import React, { useEffect, useState, useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import image from '../assets/formImage.png';
+import axios from 'axios';
 
 export default function Career() {
-    const API_URL = 'http://localhost:3500/career'
+    const API_URL = 'http://localhost:3500/career';
     // const API_URL = 'https://potencia-academy-backend.vercel.app/career';
+    const [form, setform] = useState({ name: undefined, specialization: undefined, experience: undefined, resume: undefined, lastSalary: undefined })
+    const [selectedFile, setSelectedFile] = useState(null);
+
 
     // const formm = useRef();
-
-    const [form, setform] = useState({ name: undefined, specialization: undefined, experience: undefined, resume: undefined, lastSalary: undefined })
-    // const [submitSuccess, setSubmitSuccess] = useState(0);
-    const handleOnFileUpload = async (e) => {
-        const file = e.target.files[0];
-        console.log(file);
-        const base64 = await convertToBase64(file);
-        console.log(base64);
-        setform({ ...form, resume: base64 });
+    const handleOnFileUpload = (e) => {
+        setSelectedFile(e.target.files[0]);
     }
     const handleSubmit = async () => {
-        const res = await fetch(API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(form)
-        })
-        // console.log(form)
-        // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         console.log("message send")
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
-        const result = await res.json();
+        const formData = new FormData();
+        formData.append('name', form.name);
+        formData.append('specialization', form.specialization);
+        formData.append('experience', form.experience);
+        formData.append('resume', selectedFile);
+        formData.append('lastSalary', form.lastSalary);
+        try {
+            const res = await axios.post(API_URL, formData);
 
-        if (res.status === 201) {
-            toast.success(result.message);
-            setform({ name: "", specialization: "", experience: "", resume: "", lastSalary: "" })
+            // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
+            //     .then((result) => {
+            //         console.log(result.text);
+            //         console.log("message send")
+            //     }, (error) => {
+            //         console.log(error.text);
+            //     });
+
+            console.log(res);
+
+                toast.success(res.data.message);
+                setform({ name: "", specialization: "", experience: "", resume: "", lastSalary: "" })
+            } catch (error) {
+                toast.error(error.response.data.error);
         }
-        if (res.status === 406)
-            toast.error(result.error);
-        if (res.status === 422)
-            toast.info(result.error);
-        if (res.status === 500)
-            toast.warn(result.error);
     }
-    // useEffect(() => {
-    //     if (submitSuccess) {
-    //         setform({ name: "", specialization: "", experience: "", resume: "", last_salary: "" })
-    //         setSubmitSuccess(0);
-    //     }
-    // }, [submitSuccess])
     const handleOnChange = (e) => {
         setform({ ...form, [e.target.id]: e.target.value });
     }
     const sendForm = (e) => {
         e.preventDefault();
     }
-
-    const convertToBase64 = (file) => {
-        return new Promise((resolve, reject) => {
-            const fileReader = new FileReader();
-            fileReader.readAsDataURL(file);
-            fileReader.onload = () => {
-                resolve(fileReader.result)
-            };
-            fileReader.onerror = (error) => {
-                reject(error)
-            }
-        })
-    }
     return (
         <>
             <h2 className='text-center '>Find Your Dream Job Now</h2>
-            <p className='m-md-5 m-3'>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
+            <p className='m-md-5 m-3 text-muted'>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
             <h3 className='p-3 text-center' style={{ color: "#212844" }}>Details</h3>
             <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <form onSubmit={sendForm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
@@ -93,13 +68,16 @@ export default function Career() {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label d-block">Upload CV</label>
-                            <input type="file" id="resume" accept=".jpeg, .png, .jpg" className='w-50' name="resume" onChange={handleOnChange} value={form.resume} placeholder='Upload your resume' />
+                            <input type="file" id="resume"
+                                className='w-50' name="resume"
+                                onChange={handleOnFileUpload}
+                            />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label">Last Salary</label>
                             <input type="number" className="form-control" onChange={handleOnChange} name="lasSalary" value={form.lastSalary} style={{ color: "#212844" }} id="lastSalary" aria-describedby="emailHelp" placeholder='Enter your last salary' />
                         </div>
-                        <button onClick={handleSubmit} type="submit" className="btn" style={{ border: "2px solid white" }}>Submit</button>
+                        <button onClick={handleSubmit} type="submit" className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
                         <ToastContainer
                             style={{ width: "50%" }}
                             className="mx-auto"

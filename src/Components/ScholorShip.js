@@ -55,7 +55,7 @@ export default function Form() {
         <form onSubmit={sendForm}
         // ref={formm}
         >
-            <h1 className='p-3 text-center' style={{ color: "#212844" }}>Scholarship Test</h1>
+            <h1 className='py-md-3 pt-3 text-center' style={{ color: "#212844" }}>Scholarship Test</h1>
             <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <div className=' form p-lg-5  mx-auto mx-lg-5 p-4 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
@@ -74,16 +74,8 @@ export default function Form() {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Class</label>
-                            {/* <select type="text" onChange={handleOnChange} className="form-control" style={{ color: "#212844" }} id="classs" aria-describedby="emailHelp" >
-                                <ul className="dropdown-menu ">
-                                    <option className="dropdown-item  " >Login</option>
-                                    <option className="dropdown-item  nav-link mx-2" style={{ color: "#212844" }} >Prex</option>
-                                    <option className="dropdown-item  nav-link mx-2" style={{ color: "#212844" }} >Courses Find</option>
-                                    <option className="dropdown-item  nav-link mx-2" style={{ color: "#212844" }} >Answer Key</option>
-                                </ul>
-                            </select> */}
+                           
                             <select className="form-select" onChange={handleOnChange} id="classs" aria-label="Default select example">
-                                {/* <option selected>Open this select menu</option> */}
                                 <option value="9"  >9th</option>
                                 <option value="10" >10th</option>
                             </select>
@@ -92,7 +84,7 @@ export default function Form() {
                             <label htmlFor="exampleInputEmail1" autoComplete='off' name="contact_number" className="form-label">Contact</label>
                             <input type="number" onChange={handleOnChange} className="form-control" placeholder='Enter your phone no.' value={form.contact} style={{ color: "#212844" }} id="contact" aria-describedby="emailHelp" />
                         </div>
-                        <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid white" }}>Submit</button>
+                        <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
                         <ToastContainer
                             style={{ width: "50%" }}
                             className="mx-auto"
