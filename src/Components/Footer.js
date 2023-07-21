@@ -6,9 +6,9 @@ export default function Footer() {
     return (
         <footer className=" text-center text-lg-start  text-muted mt-5" style={{ backgroundColor: "#212844" }} >
             <section >
-                <section className="d-flex justify-content-between flex-wrap  py-4 px-2" style={{backgroundColor:"rgb(36 47 88)"}} >
+                <section className="d-flex justify-content-between flex-wrap  py-4 px-sm-2 px-1" style={{backgroundColor:"rgb(36 47 88)"}} >
                     <div className="md:me-5 ">
-                        <span className='text-white fw-bold text-wrap '>Get connected with us on social networks:</span>
+                        <span className='text-white  text-wrap '>Get connected with us on social networks:</span>
                     </div>
                     <div className='text-center w-sm-100 mx-sm-0 mx-auto '>
                         <a href="https://www.facebook.com/potenciacademy" target='_blank'  className="text-white md:me-4 me-4">

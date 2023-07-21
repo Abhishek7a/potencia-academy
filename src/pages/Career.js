@@ -10,7 +10,6 @@ export default function Career() {
     const [form, setform] = useState({ name: undefined, specialization: undefined, experience: undefined, resume: undefined, lastSalary: undefined })
     const [selectedFile, setSelectedFile] = useState(null);
 
-
     // const formm = useRef();
     const handleOnFileUpload = (e) => {
         setSelectedFile(e.target.files[0]);
@@ -33,8 +32,7 @@ export default function Career() {
             //         console.log(error.text);
             //     });
 
-            console.log(res);
-
+            // console.log(res.data.message);
                 toast.success(res.data.message);
                 setform({ name: "", specialization: "", experience: "", resume: "", lastSalary: "" })
             } catch (error) {
@@ -50,8 +48,8 @@ export default function Career() {
     return (
         <>
             <h2 className='text-center '>Find Your Dream Job Now</h2>
-            <p className='m-md-5 m-3 mx-4 text-muted '>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
-            <h3 className='p-3 text-center' style={{ color: "#212844" }}>Details</h3>
+            <p className='m-md-5 mx-md-4 mx-2 text-muted '>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
+            <h3 className='p-md-3 text-center' style={{ color: "#212844" }}>Details</h3>
             <div className=' mx-md-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <form onSubmit={sendForm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
@@ -68,9 +66,9 @@ export default function Career() {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label d-block">Upload CV</label>
-                            <input type="file" id="resume"
-                                className='w-52 shadow-none' name="resume"
-                                onChange={handleOnFileUpload}
+                            <input  type="file" id="resume"
+                                className='w-52 text-black' name="resume"
+                                onChange={handleOnFileUpload} 
                             />
                         </div>
                         <div className="mb-3">
