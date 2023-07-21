@@ -22,10 +22,8 @@ export default function ContactUs() {
             toast.success(result.message);
             setform({ name: "", email: "", subject: "", message: "" })
         }
-        if (res.status === 406)
+        if (res.status === 406 || 422)
             toast.error(result.error);
-        if (res.status === 422)
-            toast.info(result.error);
         if (res.status === 500)
             toast.warn(result.error);
     }
@@ -40,7 +38,7 @@ export default function ContactUs() {
     return (
         <section className='mb-5 '>
             <h1 className='p-md-3 text-center ' style={{ color: "#212844" }}>Contact Us</h1>
-            <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
+            <div className=' mx-md-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <form onSubmit={sendForm} className=' form p-lg-5 p-4 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
                         <div className="mb-3">
@@ -62,10 +60,7 @@ export default function ContactUs() {
                         </div>
                         <button type="submit" onClick={handleSubmit} className="btn " style={{ border: "2px solid  #212844" }}>Submit</button>
                     </div>
-                    <ToastContainer
-                            style={{ width: "65%" }}
-                            className="mx-auto"
-                        />
+                    <ToastContainer className="w-75 "/>
                 </form>
                 <img src={image} className='d-lg-block w-50 d-none' alt="" />
             </div>

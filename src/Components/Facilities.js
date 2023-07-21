@@ -3,7 +3,7 @@ import React from 'react'
 export default function Facilities() {
     return (
         <section className="bg-light">
-            <h1 className='mt-2 text-center pt-5'>Facilities</h1>
+            <h1 className=' text-center pt-5'>Facilities</h1>
             <div className='d-flex flex-wrap justify-content-around '>
                 <div className="card mb-3 col-lg-3 col-md-5  mt-3 mx-md-2 mx-1 col-sm-10 px-2" style={{ border: "1px solid #212844" }}>
                     <div className="row g-0">

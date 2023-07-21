@@ -81,12 +81,7 @@ export default function Form() {
                             <input type="number" onChange={handleOnChange} className="form-control" placeholder='Enter your phone no.' value={form.contact} style={{ color: "#212844" }} id="contact" aria-describedby="emailHelp" />
                         </div>
                         <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
-                        <ToastContainer
-                            style={{
-                                // width: "65%"
-                            }}
-                        // className="w-md-50"
-                        />
+                        <ToastContainer className="w-75 "/>
                     </div>
                 </div>
                 <img src={scholorship} className='d-lg-block w-50 d-none ' alt="" />
