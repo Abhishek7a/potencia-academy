@@ -19,7 +19,7 @@ export default function ContactUs() {
         const result = await res.json();
 
         if (res.status === 201) {
-            toast.success(result.message);
+            toast.success('Thankyou for your feedback');
             setform({ name: "", email: "", subject: "", message: "" })
         }
         if (res.status === 406 || 422)
