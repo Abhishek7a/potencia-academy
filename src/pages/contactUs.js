@@ -30,7 +30,7 @@ export default function ContactUs() {
             const templateParams = {
                 to_email: 'abhishekarora7327@gmail.com',
                 message: JSON.stringify({
-                    Form: "Scholorship Form",
+                    Form: "Contact Us",
                     name: form.name,
                     email: form.email,
                     subject: form.subject,

@@ -65,7 +65,7 @@ export default function Career() {
     }
     return (
         <>
-            <h2 className='text-center '>Find Your Dream Job Now</h2>
+            <h2 className='text-center mt-2'>Find Your Dream Job Now</h2>
             <p className='m-md-5 mx-md-4 mx-2 text-muted '>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
             <h3 className='p-md-3 text-center' style={{ color: "#212844" }}>Details</h3>
             <div className=' mx-md-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>

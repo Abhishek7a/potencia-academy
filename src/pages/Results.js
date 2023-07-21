@@ -7,7 +7,7 @@ export default function Results(props) {
 
   return (
     <>
-      <div className=' justify-content-between my-2 my-lg-5  lg:gap-5 mx-md-5 mx-sm-5  row mx-4'>
+      <div className=' justify-content-between my-2 my-lg-5  lg:gap-5 mx-md-5 mx-sm-5  row mx-3'>
         <h1 className='text-center'>{props.heading}</h1>
         <div className="text-center position-relative card col-md-3 mt-sm-5">
           <img className="card-img-top w-50 rounded-circle mt-5 mx-auto p-2 " style={{ border: "2px solid #212844", maxHeight: "150px", maxWidth: "150px" }} src={anmol} alt="Card image cap" />
@@ -32,12 +32,12 @@ export default function Results(props) {
         </div>
       </div>
 
-      <div class="row mx-4 ">
+      <div class="row mx-1">
         {props.path.map((data) => {
           return (
             <div className="col-md-3  mt-3" >
               <div className="card">
-                <img className="card-img-top w-50 rounded-circle mt-5 mx-auto p-2" style={{ border: "2px solid #212844", maxHeight: "170px" }} src={data.link} alt="Card image cap" />
+                <img className="card-img-top w-50 rounded-circle mt-5 mx-auto p-2" style={{ border: "2px solid #212844", maxHeight: "150px", maxWidth: "150px" }} src={data.link} alt="Card image cap" />
                 <div className='p-3'>
                   <h5 className="card-title text-center">{data.name}</h5>
                   <p className="card-text text-muted text-center">{data.currently}</p>
