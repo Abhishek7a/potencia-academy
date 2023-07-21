@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
-import './ScholorShip.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './ScholorShip.css'
 import scholorship from '../assets/formImage.png';
 import emailjs from '@emailjs/browser';
 
@@ -27,12 +27,8 @@ export default function Form() {
             toast.success(result.message);
             setform({ name: "", email: "", fatherName: "", classs: "9", contact: "" })
         }
-        if (res.status === 406)
+        if (res.status === 406 || 422 || 409)
             toast.error(result.error);
-        if (res.status === 422)
-            toast.info(result.error);
-        if (res.status === 409)
-            toast.warn(result.error);
         if (res.status === 500)
             toast.warn(result.error);
 
@@ -56,7 +52,7 @@ export default function Form() {
         // ref={formm}
         >
             <h1 className='py-md-3 pt-3 text-center' style={{ color: "#212844" }}>Scholarship Test</h1>
-            <div className=' mx-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
+            <div className=' mx-md-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
                 <div className=' form p-lg-5  mx-auto mx-lg-5 p-4 px-md-0 px-lg-0 '>
                     <div className='mx-lg-5 px-lg-5'>
                         <div className="mb-3">
@@ -74,7 +70,7 @@ export default function Form() {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Class</label>
-                           
+
                             <select className="form-select" onChange={handleOnChange} id="classs" aria-label="Default select example">
                                 <option value="9"  >9th</option>
                                 <option value="10" >10th</option>
@@ -86,8 +82,10 @@ export default function Form() {
                         </div>
                         <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
                         <ToastContainer
-                            style={{ width: "65%" }}
-                            className="mx-auto"
+                            style={{
+                                // width: "65%"
+                            }}
+                        // className="w-md-50"
                         />
                     </div>
                 </div>
