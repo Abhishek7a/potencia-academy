@@ -80,7 +80,7 @@ export default function Form() {
                             <label htmlFor="exampleInputEmail1" autoComplete='off' name="contact_number" className="form-label">Contact</label>
                             <input type="number" onChange={handleOnChange} className="form-control" placeholder='Enter your phone no.' value={form.contact} style={{ color: "#212844" }} id="contact" aria-describedby="emailHelp" />
                         </div>
-                        <button onClick={handleSubmit} type='submit' className="btn" style={{ border: "2px solid #212844" }}>Submit</button>
+                        <button onClick={handleSubmit} type='submit' className="btn border-2 border-white" style={{ border: "2px solid #212844" }}>Submit</button>
                         <ToastContainer className="w-75 "/>
                     </div>
                 </div>

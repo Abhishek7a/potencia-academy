@@ -58,7 +58,7 @@ export default function ContactUs() {
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label">Message</label>
                             <textarea type="textarea" rows="5" className="form-control " onChange={handleOnChange} name="text" value={form.message} style={{ color: "#212844" }} id="message" aria-describedby="emailHelp" placeholder='Enter your message' />
                         </div>
-                        <button type="submit" onClick={handleSubmit} className="btn " style={{ border: "2px solid  #212844" }}>Submit</button>
+                        <button type="submit" onClick={handleSubmit} className="btn border-2 border-white" style={{ border: "2px solid #212844" }} >Submit</button>
                     </div>
                     <ToastContainer className="w-75 "/>
                 </form>
