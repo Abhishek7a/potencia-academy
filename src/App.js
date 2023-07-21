@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Footer from './Components/Footer';
 import AboutUs from './pages/AboutUs';
 import Career from './pages/Career';
-import ContactUs from './pages/ContactUs';
+import ContactUs from './pages/contactUs';
 import Api from './resultsAPI';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Results from './pages/Results';
