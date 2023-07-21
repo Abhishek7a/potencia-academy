@@ -40,28 +40,28 @@ export default function Header() {
                                 </a>
                                 <ul className="dropdown-menu ">
                                     <Link onClick={goToTop} className="nav-link px-2" style={{ color: "#212844" }} to="/medical"><li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Medical </li></Link>
-                                    <Link onClick={goToTop}  className="nav-link px-2" style={{ color: "#212844" }} to="/non-medical"><li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Non-Medical</li></Link>
+                                    <Link onClick={goToTop} className="nav-link px-2" style={{ color: "#212844" }} to="/non-medical"><li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Non-Medical</li></Link>
                                     <Link onClick={goToTop} className="nav-link px-2" style={{ color: "#212844" }} to="/broad"><li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Boards</li></Link>
                                     <Link onClick={goToTop} className="nav-link px-2" style={{ color: "#212844" }} to="/others"><li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Others</li></Link>
                                 </ul>
                             </li>
 
-                            <Link onClick={goToTop}  className={`${location.pathname === "/aboutUs" ? "link  m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }} to="/aboutUs"> <li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About Us </li></Link>
+                            <Link onClick={goToTop} className={`${location.pathname === "/aboutUs" ? "link  m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }} to="/aboutUs"> <li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About Us </li></Link>
 
                             <li className="nav-item dropdown mx-lg-2" >
                                 <a className="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: "#212844" }}>
                                     Students<span className="mx-1" style={{ clipPath: "polygon(49% 74%, 0 39%, 100% 39%)", backgroundColor: "#212844" }}> ...</span>
                                 </a>
                                 <ul className="dropdown-menu ">
-                                    <Link onClick={goToTop}  className="px-2  nav-link"style={{ color: "#212844" }} to="#"> <li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Courses Find </li></Link>
-                                    <Link onClick={goToTop} className="px-2  nav-link"style={{ color: "#212844" }} to="#"> <li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Answer Key </li></Link>
+                                    <Link onClick={goToTop} className="px-2  nav-link" style={{ color: "#212844" }} to="#"> <li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Courses Find </li></Link>
+                                    <Link onClick={goToTop} className="px-2  nav-link" style={{ color: "#212844" }} to="#"> <li data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Answer Key </li></Link>
                                 </ul>
                             </li>
 
                             <Link to='https://frontend-testing-portal-potencia.vercel.app/' onClick={goToTop} className={`${location.pathname === "/prex" ? "link m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }}  ><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Prex  </li></Link>
 
 
-                            <Link onClick={goToTop} className={`${location.pathname === "/contactUs" ? "link  m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }}  to="/contactUs"><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Contact Us</li></Link>
+                            <Link onClick={goToTop} className={`${location.pathname === "/contactUs" ? "link  m-lg-2 my-2" : "nav-link"}`} style={{ color: "#212844" }} to="/contactUs"><li className="nav-item mx-lg-2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Contact Us</li></Link>
                         </ul>
                     </div>
                 </div>

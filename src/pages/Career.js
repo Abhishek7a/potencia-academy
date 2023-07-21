@@ -1,16 +1,23 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, {  useState, useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import image from '../assets/formImage.png';
 import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 export default function Career() {
     // const API_URL = 'http://localhost:3500/career';
     const API_URL = 'https://potencia-academy-backend.vercel.app/career';
+
+    const formm = useRef();
+
+    const userId = process.env.REACT_APP_EMAIL_USERID;
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+    const API_KEY = process.env.REACT_APP_API_KEY;
+
     const [form, setform] = useState({ name: undefined, specialization: undefined, experience: undefined, resume: undefined, lastSalary: undefined })
     const [selectedFile, setSelectedFile] = useState(null);
 
-    // const formm = useRef();
     const handleOnFileUpload = (e) => {
         setSelectedFile(e.target.files[0]);
     }
@@ -23,20 +30,33 @@ export default function Career() {
         formData.append('lastSalary', form.lastSalary);
         try {
             const res = await axios.post(API_URL, formData);
+            toast.success(res.data.message);
+            // Send Email
+            emailjs.init(userId);
 
-            // emailjs.sendForm('service_uxv80ip', 'template_u19svt5', formm.current, 'XHYEBCkd47fUJJarO')
-            //     .then((result) => {
-            //         console.log(result.text);
-            //         console.log("message send")
-            //     }, (error) => {
-            //         console.log(error.text);
-            //     });
+            const templateParams = {
+                to_email: 'abhishekarora7327@gmail.com',
+                message: JSON.stringify({
+                    Form: "Career Form",
+                    name: form.name,
+                    specialization: form.specialization,
+                    experience: form.experience,
+                    resume: selectedFile,
+                    lastSalary: form.lastSalary
+                }, null, 2),
+            };
 
-            // console.log(res.data.message);
-                toast.success(res.data.message);
-                setform({ name: "", specialization: "", experience: "", resume: "", lastSalary: "" })
-            } catch (error) {
-                toast.error(error.response.data.error);
+            emailjs.send('default_service', TEMPLATE_ID, templateParams, API_KEY)
+                .then((response) => {
+                    // console.log('Email sent successfully!', response);
+                })
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                });
+
+            setform({ name: "", specialization: "", experience: "", resume: "", lastSalary: "" })
+        } catch (error) {
+            toast.error(error.response.data.error);
         }
     }
     const handleOnChange = (e) => {
@@ -51,8 +71,8 @@ export default function Career() {
             <p className='m-md-5 mx-md-4 mx-2 text-muted '>Potencia Classes, the initiator in the field of coaching industry in Kota has opening of Faculty positions for their Study Centers in PHYSICS, CHEMISTRY (ORGANIC, INORGANIC, PHYSICAL), MATHS and BIOLOGY streams. By joining Potencia Classes you will enjoy the working culture, higher pay packets and many other facilities.</p>
             <h3 className='p-md-3 text-center' style={{ color: "#212844" }}>Details</h3>
             <div className=' mx-md-2 rounded formSection d-lg-flex d-md-flex justify-content-between '>
-                <form onSubmit={sendForm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
-                    <div className='mx-lg-5 px-lg-5'>
+                <form onSubmit={sendForm} ref={formm} className=' form p-md-5 p-3 mx-auto mx-lg-5 px-md-0 px-lg-0 '>
+                    <div className='mx-lg-5 px-lg-5 w-100'>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
                             <input type="text" onChange={handleOnChange} name="user_name" value={form.name} className="form-control" placeholder='Enter your name' style={{ color: "#212844" }} id="name" aria-describedby="emailHelp" />
@@ -66,9 +86,9 @@ export default function Career() {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" autoComplete='off' className="form-label d-block">Upload CV</label>
-                            <input  type="file" id="resume"
-                                className='w-52 text-black' name="resume"
-                                onChange={handleOnFileUpload} 
+                            <input type="file" id="resume"
+                                className='form-control' name="resume" style={{ color: "#212844" }}
+                                onChange={handleOnFileUpload}
                             />
                         </div>
                         <div className="mb-3">
@@ -76,7 +96,7 @@ export default function Career() {
                             <input type="number" className="form-control" onChange={handleOnChange} name="lasSalary" value={form.lastSalary} style={{ color: "#212844" }} id="lastSalary" aria-describedby="emailHelp" placeholder='Enter your last salary' />
                         </div>
                         <button onClick={handleSubmit} type="submit" className="btn border-2 border-white " style={{ border: "2px solid #212844" }}>Submit</button>
-                        <ToastContainer className="w-75 z-1"/>
+                        <ToastContainer className="w-75 z-1 pt-4 mt-5" />
                     </div>
                 </form>
                 <img src={image} className='d-lg-block w-50 d-none ' alt="" />

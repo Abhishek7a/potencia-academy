@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className=" text-center text-lg-start  text-muted mt-5" style={{ backgroundColor: "#212844" }} >
             <section >
-                <section className="d-flex justify-content-between flex-wrap  py-4 px-sm-2 px-1" style={{backgroundColor:"rgb(36 47 88)"}} >
+                <section className="d-flex justify-content-between flex-wrap  py-4 px-sm-2 px-1" style={{backgroundColor:"rgb(36 50 102)"}} >
                     <div className="md:me-5 ">
                         <span className='text-white  text-wrap '>Get connected with us on social networks:</span>
                     </div>
@@ -78,7 +78,7 @@ export default function Footer() {
                 </div>
             </section>
 
-            <div className="text-center p-4  text-light" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
+            <div className="text-center p-4  text-light" style={{ backgroundColor: "rgb(18 26 57)" }}>
                 © 2023 Copyright <a className="text-reset fw-bold nav-link" href="#"> Potencia Academy</a>
             </div>
         </footer >

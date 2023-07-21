@@ -27,7 +27,7 @@ function App() {
           <Route exact path='/career' element={<Career />} />
           <Route exact path='/contactUs' element={<ContactUs />} />
           <Route exact path='/syllabus' element={<Syllabus />} />
-          <Route  path='*' element={<h1 className='text-center'>Page Not Found</h1>} />
+          <Route path='*' element={<h1 className='text-center'>Page Not Found</h1>} />
         </Routes>
         <Footer />
       </Router >

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Card() {
   const goToTop = () => {
     document.documentElement.scrollTop = 0;
-}
+  }
   return (
     <div className=" mt-5 lg-p-5 md-p-5 py-1 p-md-3 mx-lg-1 mx-md-0  mx-0 " style={{ backgroundImage: "url(https://www.catestseries.org/Images/bg-banner.jpg)" }}>
 
@@ -24,7 +24,7 @@ export default function Card() {
         <div className="col-sm-12 col-lg-4  col-md-6 mt-3">
           <div className="card">
             <div className="card-body text-center">
-              <h5 className="card-title"  style={{ color: "#212844" }}>Enthusiast</h5>
+              <h5 className="card-title" style={{ color: "#212844" }}>Enthusiast</h5>
               <p className="card-text" style={{ color: "#212844" }}>(JEE / NEET)</p>
               <Link to="/syllabus" onClick={goToTop} className="btn  d-block  mx-md-auto ">View Details</Link>
               <Link to="/syllabus" onClick={goToTop} className="btn mt-2 d-block mx-md-auto">Syllabus</Link>
